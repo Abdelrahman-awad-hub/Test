@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn JS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* body {
+            height: 10000px;
+        }
+
+        div {
+
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            background-color: #333;
+        }
+
+        h2 {
+            background-color: tomato;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 18px;
+            line-height: 50px;
+        }
+
+        button {
+            padding: 15px;
+            border-radius: 50%;
+            border: none;
+            background-color: #55fd55;
+            position: fixed;
+            right: 10px;
+            bottom: 25px;
+            cursor: pointer;
+            transition: transform 1s, display 1s;
+            display: none;
+            animation: scrollTop 2s infinite;
+            animation-direction: alternate;
+        } */
+
+        /* @keyframes scrollTop {
+            0% {
+                transform: translateY(15px);
+            }
+
+            100% {
+                transform: translateY(5px);
+            }
+        } */
+
+        .colors {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            background-color: #aaa;
+            width: 400px;
+            margin: 20px auto;
+            list-style: none;
+        }
+
+        .colors li {
+            cursor: pointer;
+            padding: 30px;
+            opacity: 0.5;
+            transition: opacity 0.5s;
+        }
+
+        .colors li:hover {
+            opacity: 1;
+        }
+
+        .active {
+            opacity: 1;
+        }
+
+        .colors li:nth-of-type(1) {
+            background-color: red;
+        }
+
+        .colors li:nth-of-type(2) {
+            background-color: black;
+        }
+
+        .colors li:nth-of-type(3) {
+            background-color: blue;
+        }
+
+        .colors li:nth-of-type(4) {
+            background-color: green;
+        }
+
+        .expreiment {
+            width: 500px;
+            height: 400px;
+            background-color: red;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+        test
+    </header>
+    <div id="teto"></div>
+    <p class="p">learn &lt;span&gt;JS</p>
+
+    <form action="/action_page.php">
+          <label for="fname">First name:</label><br />
+          <input type="text" id="fname" name="fname" /> <br />
+          <label for="lname">Last name:</label><br />
+          <input type="text" id="lname" name="lname" />
+        <br />
+          <input type="submit" value="Submit" />
+        <input type="reset" />
+    </form>
+    <button class="btn" style="background-color: tomato;
+    padding: 15px 40px;
+    font-size: 18px;">red</button>
+    <p class="hah">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, et.</p> -->
+
+
+    <!-- <div>
+        <h2>1</h2>
+    </div>
+    <button>UP</button> -->
+
+
+
+
+    <ul class="colors">
+        <li class="active" data-color="red"></li>
+        <li data-color="black"></li>
+        <li data-color="blue"></li>
+        <li data-color="green"></li>
+    </ul>
+    <div class="expreiment"></div>
+
+    <input type="text" class="name">
+    <script src="./main.js"></script>
+</body>
+
+</html>

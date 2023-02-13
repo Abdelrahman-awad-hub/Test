@@ -1,0 +1,103 @@
+// let myProduct = document.createElement("div");
+// let myProductName = document.createElement("h3");
+// let myProductInfo = document.createElement("p");
+
+// // let myAttr = document.createAttribute("data-custom");
+// let myTitle = document.createTextNode("product name");
+// let myParagraph = document.createTextNode("Lorem ipsum dolor sit.");
+
+// let myComment = document.createComment("this is product card");
+
+// myProduct.className = "product";
+
+// myProduct.appendChild(myComment);
+// myProduct.appendChild(myProductName);
+// myProductName.appendChild(myTitle);
+// myProductInfo.appendChild(myParagraph);
+// myProduct.appendChild(myProductInfo);
+// document.body.appendChild(myProduct);
+
+// for (let i = 1; i <= 9; i++) {
+//     let myProduct = document.createElement("div");
+//     let myProductName = document.createElement("h3");
+//     let myProductInfo = document.createElement("p");
+
+//     // let myAttr = document.createAttribute("data-custom");
+//     let myTitle = document.createTextNode("product name");
+//     let myParagraph = document.createTextNode("Lorem ipsum dolor sit.");
+
+//     let myComment = document.createComment("this is product card");
+
+//     myProduct.className = "product-${i}";
+
+//     myProduct.appendChild(myComment);
+//     myProduct.appendChild(myProductName);
+//     myProductName.appendChild(myTitle);
+//     myProductInfo.appendChild(myParagraph);
+//     myProduct.appendChild(myProductInfo);
+//     document.body.appendChild(myProduct);
+// }
+
+// let myElement = document.querySelector(".test");
+// let myBtn = document.querySelector("button");
+
+// console.log(myElement);
+// console.log(myElement.children);
+// console.log(myElement.childNodes);
+// console.log(myElement.firstChild);
+// console.log(myElement.firstElementChild);
+
+// myBtn.onclick = function () {
+//     console.log("testtttt");
+// };
+
+/************************************************* */
+
+// let userNameInput = document.querySelector("[ name = 'userName']");
+// let ageInput = document.querySelector("[ name = 'age']");
+// let phoneInput = document.querySelector("[ name = 'phoneNumber']");
+
+// document.forms[0].onsubmit = function (e) {
+//     let nameValid = false;
+//     let ageValid = false;
+//     let phoneValid = false;
+
+//     if (userNameInput.value != "" && userNameInput.value.length <= 10) {
+//         nameValid = true;
+//     }
+
+//     if (ageInput.value != "") {
+//         ageValid = true;
+//     }
+
+//     if (phoneInput.value != "" && phoneInput.value.length === 11)
+//         phoneValid = true;
+
+//     if (p) if (ageValid === false || nameValid === false) e.preventDefault();
+// };
+
+// window.onload = function () {
+//     userNameInput.focus();
+// };
+
+// userNameInput.onblur = function () {
+//     document.querySelector("form").style = "background-color: red;";
+// };
+// userNameInput.onfocus = function () {
+//     document.querySelector("form").style.cssText =
+//         "background-color: rebeccapurple";
+// };
+
+// let myDiv = document.querySelector("div");
+
+// // console.log(myDiv.classList.toggle("Abdo"));
+
+// myDiv.onclick = function () {
+//     this.classList.toggle("Abdo");
+// };
+
+// myDiv.after("test");
+
+// let p = document.querySelector("p");
+
+// console.log(p.parentElement);

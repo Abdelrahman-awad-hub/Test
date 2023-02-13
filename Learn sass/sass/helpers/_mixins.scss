@@ -1,0 +1,51 @@
+@mixin tr-direction($direction) {
+    @if $direction== "top" {
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 20px solid red;
+    } @else if $direction== "bottom" {
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 20px solid red;
+    } @else if $direction== "left" {
+        left: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-right: 20px solid red;
+    } @else if $direction== "right" {
+        right: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-left: 20px solid red;
+    } @else {
+        @error "direction not found";
+    }
+}
+
+@mixin breakPoint($device) {
+    @if $device == mobile {
+        @media (max-width: 767px) {
+            @content;
+        }
+    } @else if $device == small {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    } @else if $device == medium {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    } @else if $device == large {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+@mixin centerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

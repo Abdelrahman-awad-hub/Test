@@ -1,0 +1,5 @@
+/// function half
+
+@function half($size) {
+    @return $size / 2;
+}
